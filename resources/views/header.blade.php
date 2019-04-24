@@ -3,8 +3,8 @@
         <div class="container">
             <div class="pull-left auto-width-left">
                 <ul class="top-menu menu-beta l-inline">
-                    <li><a href=""><i class="fa fa-home"></i> Kí túc xá Khu A ĐHQG</a></li>
-                    <li><a href=""><i class="fa fa-phone"></i> 0163 296 7751</a></li>
+                    <li><a href=""><i class="fa fa-home"></i> Đại học Công nghệ Thông tin</a></li>
+                    <li><a href=""><i class="fa fa-phone"></i> 0977584287</a></li>
                 </ul>
             </div>
             <div class="pull-right auto-width-right">
@@ -20,7 +20,7 @@
     <div class="header-body">
         <div class="container beta-relative">
             <div class="pull-left">
-                <a href="/about" id="logo"><img src="source/assets/dest/images/logo-cake.png" width="200px" alt=""></a>
+                <a href="/about" id="logo"><img src="source/image/icon/logo.png" width="80px" alt=""></a>
             </div>
             <div class="pull-right beta-components space-left ov">
                 <div class="space10">&nbsp;</div>
@@ -91,15 +91,36 @@
             <nav class="main-menu">
                 <ul class="l-inline ov">
                     <li><a href="/home">Trang chủ</a></li>
-                    <li><a href="/product-type">Sản phẩm</a>
+                    <li><a href="/product-type">GẤU TEDDY</a>
                         <ul class="sub-menu">
-                            <li><a href="/product-detail">Sản phẩm 1</a></li>
-                            <li><a href="/product-detail">Sản phẩm 2</a></li>
-                            <li><a href="/product-detail">Sản phẩm 4</a></li>
+                            <li><a href="/product-detail">Gấu bông Teddy To</a></li>
+                            <li><a href="/product-detail">Gấu bông Teddy Giá Rẻ</a></li>
+                            <li><a href="/product-detail">Gấu bông cao cấp</a></li>
+                            <li><a href="/product-detail">Gấu bông dễ thương</a></li>
+                            
                         </ul>
                     </li>
-                    <li><a href="/about">Giới thiệu</a></li>
-                    <li><a href="/contact">Liên hệ</a></li>
+                    <li><a href="/product-type">THÚ BÔNG</a>
+                        <ul class="sub-menu">
+                            <li><a href="/product-detail">Thú bông loài vật</a></li>
+                            <li><a href="/product-detail">Thú bông khác</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/product-type">SẢN PHẨM HOT</a>
+                        <ul class="sub-menu">
+                            <li><a href="/product-detail">Gấu bông hoạt hình</a></li>
+                            <li><a href="/product-detail">Thú bông hoạt hình</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/product-type">PHỤ KIỆN</a>
+                        <ul class="sub-menu">
+                            <li><a href="/product-detail">Gối bông</a></li>
+                            <li><a href="/product-detail">Áo choàng</a></li>
+                            <li><a href="/product-detail">Ghế bông</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/about">GIỚI THIỆU</a></li>
+                    <li><a href="/contact">LIÊN HỆ</a></li>
                 </ul>
                 <div class="clearfix"></div>
             </nav>
