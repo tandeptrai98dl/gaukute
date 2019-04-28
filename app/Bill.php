@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Bill extends Model
 {
-    protected $table = "bill";
+    protected $table = "bills";
 
     public function bill_detail(){
-        return $this->hasMany('App\Bill','bill_id','id');
+        return $this->hasMany('App\BillDetail','bill_id','id');
     }
 
     public function customer(){
