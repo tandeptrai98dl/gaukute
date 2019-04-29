@@ -3,8 +3,8 @@
         <div class="container">
             <div class="pull-left auto-width-left">
                 <ul class="top-menu menu-beta l-inline">
-                    <li><a href=""><i class="fa fa-home"></i> Đại học Công nghệ Thông tin</a></li>
-                    <li><a href=""><i class="fa fa-phone"></i> 0977584287</a></li>
+                    <li><a href="/contact"><i class="fa fa-home"></i> Đại học Công nghệ Thông tin</a></li>
+                    <li><a href="/about"><i class="fa fa-phone"></i> Team Solo MID</a></li>
                 </ul>
             </div>
             <div class="pull-right auto-width-right">
@@ -20,7 +20,7 @@
     <div class="header-body">
         <div class="container beta-relative">
             <div class="pull-left">
-                <a href="/about" id="logo"><img src="source/image/icon/logo.png" width="80px" alt=""></a>
+                <a href="/" id="logo"><img src="source/image/icon/logo.png" width="80px" alt=""></a>
             </div>
             <div class="pull-right beta-components space-left ov">
                 <div class="space10">&nbsp;</div>
@@ -90,33 +90,67 @@
             <div class="visible-xs clearfix"></div>
             <nav class="main-menu">
                 <ul class="l-inline ov">
-                    <li><a href="/home">Trang chủ</a></li>
-                    <li><a href="/product-type">GẤU TEDDY</a>
+                    <li><a href="/">Trang chủ</a></li>
+                    <li><a href="#">GẤU TEDDY</a>
                         <ul class="sub-menu">
-                            <li><a href="/product-detail">Gấu bông Teddy To</a></li>
-                            <li><a href="/product-detail">Gấu bông Teddy Giá Rẻ</a></li>
-                            <li><a href="/product-detail">Gấu bông cao cấp</a></li>
-                            <li><a href="/product-detail">Gấu bông dễ thương</a></li>
-                            
+                            @foreach($data['teddy'] as $value)
+                                <li><a href="/product-type">{{$value->name}}</a></li>
+                            @endforeach
                         </ul>
                     </li>
                     <li><a href="/product-type">THÚ BÔNG</a>
                         <ul class="sub-menu">
-                            <li><a href="/product-detail">Thú bông loài vật</a></li>
-                            <li><a href="/product-detail">Thú bông khác</a></li>
+                            <li><a href="/product-detail">Thú bông Loài vật</a>
+                                <ul class="sub-menu">
+                                    @foreach($data['animal'] as $value)
+                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            <li><a href="/product-detail">Thú bông Khác</a>
+                                <ul class="sub-menu">
+                                    @foreach($data['another'] as $value)
+                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                    @endforeach
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                    <li><a href="/product-type">SẢN PHẨM HOT</a>
+                    <li><a href="/product-type">HOẠT HÌNH</a>
                         <ul class="sub-menu">
-                            <li><a href="/product-detail">Gấu bông hoạt hình</a></li>
-                            <li><a href="/product-detail">Thú bông hoạt hình</a></li>
+                            <li><a href="/product-detail">Gấu bông Hoạt hình</a>
+                                <ul class="sub-menu">
+                                    @foreach($data['cartoon'] as $value)
+                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            <li><a href="/product-detail">Gấu bông Hot</a>
+                                <ul class="sub-menu">
+                                    @foreach($data['hot'] as $value)
+                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                    @endforeach
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li><a href="/product-type">PHỤ KIỆN</a>
                         <ul class="sub-menu">
-                            <li><a href="/product-detail">Gối bông</a></li>
-                            <li><a href="/product-detail">Áo choàng</a></li>
-                            <li><a href="/product-detail">Ghế bông</a></li>
+                            <li><a href="/product-detail">Gối bông</a>
+                                <ul class="sub-menu">
+                                    @foreach($data['pillow'] as $value)
+                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                    @endforeach
+                                </ul>
+                            </li>
+
+                            <li><a href="/product-detail">Phụ kiện bông</a>
+                                <ul class="sub-menu">
+                                    @foreach($data['nani'] as $value)
+                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                    @endforeach
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li><a href="/about">GIỚI THIỆU</a></li>
