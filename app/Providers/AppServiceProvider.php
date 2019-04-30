@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Cart;
 use App\ProductType;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -40,9 +42,18 @@ class AppServiceProvider extends ServiceProvider
                'cartoon'    => $cartoon,
                'hot'        => $hot,
                'pillow'     => $pillow,
-               'nani'       => $nani,
+               'nani'       => $nani
            );
            $view->with('data',$data);
         });
+
+        view()->composer('header',function ($view){
+            if(Session('cart')){
+                $old_cart = Session::get('cart');
+                $cart     = new Cart($old_cart);
+                $view->with('product_cart',$cart->items);
+            }
+        });
+        
     }
 }
