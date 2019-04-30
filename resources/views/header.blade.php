@@ -94,60 +94,60 @@
                     <li><a href="#">GẤU TEDDY</a>
                         <ul class="sub-menu">
                             @foreach($data['teddy'] as $value)
-                                <li><a href="/product-type">{{$value->name}}</a></li>
+                                <li><a href="/product-type/{{$value->id}}">{{$value->name}}</a></li>
                             @endforeach
                         </ul>
                     </li>
-                    <li><a href="/product-type">THÚ BÔNG</a>
+                    <li><a href="#">THÚ BÔNG</a>
                         <ul class="sub-menu">
-                            <li><a href="/product-detail">Thú bông Loài vật</a>
+                            <li><a href="#">Thú bông Loài vật</a>
                                 <ul class="sub-menu">
                                     @foreach($data['animal'] as $value)
-                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                        <li><a href="/product-type/{{$value->id}}">{{$value->name}}</a></li>
                                     @endforeach
                                 </ul>
                             </li>
-                            <li><a href="/product-detail">Thú bông Khác</a>
+                            <li><a href="#">Thú bông Khác</a>
                                 <ul class="sub-menu">
                                     @foreach($data['another'] as $value)
-                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                        <li><a href="/product-type/{{$value->id}}">{{$value->name}}</a></li>
                                     @endforeach
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="/product-type">HOẠT HÌNH</a>
+                    <li><a href="#">HOẠT HÌNH</a>
                         <ul class="sub-menu">
-                            <li><a href="/product-detail">Gấu bông Hoạt hình</a>
+                            <li><a href="#">Gấu bông Hoạt hình</a>
                                 <ul class="sub-menu">
                                     @foreach($data['cartoon'] as $value)
-                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                        <li><a href="/product-type/{{$value->id}}">{{$value->name}}</a></li>
                                     @endforeach
                                 </ul>
                             </li>
-                            <li><a href="/product-detail">Gấu bông Hot</a>
+                            <li><a href="#">Gấu bông Hot</a>
                                 <ul class="sub-menu">
                                     @foreach($data['hot'] as $value)
-                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                        <li><a href="/product-type/{{$value->id}}">{{$value->name}}</a></li>
                                     @endforeach
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="/product-type">PHỤ KIỆN</a>
+                    <li><a href="#">PHỤ KIỆN</a>
                         <ul class="sub-menu">
-                            <li><a href="/product-detail">Gối bông</a>
+                            <li><a href="#">Gối bông</a>
                                 <ul class="sub-menu">
                                     @foreach($data['pillow'] as $value)
-                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                        <li><a href="/product-type/{{$value->id}}">{{$value->name}}</a></li>
                                     @endforeach
                                 </ul>
                             </li>
 
-                            <li><a href="/product-detail">Phụ kiện bông</a>
+                            <li><a href="#">Phụ kiện bông</a>
                                 <ul class="sub-menu">
                                     @foreach($data['nani'] as $value)
-                                        <li><a href="/product-type">{{$value->name}}</a></li>
+                                        <li><a href="/product-type/{{$value->id}}">{{$value->name}}</a></li>
                                     @endforeach
                                 </ul>
                             </li>
