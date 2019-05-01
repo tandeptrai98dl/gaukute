@@ -38,11 +38,17 @@
                             <div class="beta-dropdown cart-body">
                                 @foreach($product_cart as $product)
                                     <div class="cart-item">
+                                        <a class="cart-item-delete" href="/delete-cart/{{$product['item']['id']}}"><i class="fa fa-times"></i></a>
                                         <div class="media">
                                             <a class="pull-left" href="#"><img src="source/image/product/{{$product['item']['image']}}" alt=""></a>
                                             <div class="media-body">
                                                 <span class="cart-item-title">{{$product['item']['name']}}</span>
-                                                <span class="cart-item-amount">{{$product['qty']}} x <span>{{number_format($product['item']['unit_price'])}}₫</span></span>
+                                                <span class="cart-item-amount">{{$product['qty']}} x <span>
+                                                @if($product['item']['promotion_price'] != 0)
+                                                    {{number_format($product['item']['promotion_price'])}}₫
+                                                @else
+                                                    {{number_format($product['item']['unit_price'])}}₫
+                                                @endif </span></span>
                                             </div>
                                         </div>
                                     </div>

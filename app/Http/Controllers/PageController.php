@@ -41,12 +41,23 @@ class PageController extends Controller
         return view('page.about');
     }
 
-    public function addToCart(Request $request,$id){
+    public function addToCart($id){
         $product  = Product::find($id);
         $old_cart = Session('cart')? Session::get('cart'):null;
         $cart     = new Cart($old_cart);
         $cart->add($product, $id);
-        $request->session()->put('cart',$cart);
+        Session::put('cart',$cart);
+        return redirect()->back();
+    }
+
+    public function deleteItemCart($id){
+        $old_cart  = Session::has('cart')?Session::get('cart'):null;
+        $cart      = new Cart($old_cart);
+        $cart->removeItem($id);
+        if(count($cart->items)>0)
+            Session::put('cart',$cart);
+        else
+            Session::forget('cart');
         return redirect()->back();
     }
 }
