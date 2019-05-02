@@ -20,7 +20,7 @@
 
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="source/image/product/{{$detail->image}}" alt="" height="250px">
+                        <img src="source/image/{{$detail->type_id}}/{{$detail->image}}" alt="" height="250px">
                     </div>
                     <div class="col-sm-8">
                         <div class="single-item-body">
@@ -81,7 +81,7 @@
                                     @endif
 
                                     <div class="single-item-header">
-                                        <a href="#"><img src="source/image/product/{{$product->image}}" alt="" height="250px"></a>
+                                        <a href="#"><img src="source/image/{{$product->type_id}}/{{$product->image}}" alt="" height="250px"></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">{{$product->name}}</p>
@@ -96,7 +96,7 @@
                                     </div>
                                     <div class="single-item-caption">
                                         <a class="add-to-cart pull-left" href="#"><i class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="#">Details <i class="fa fa-chevron-right"></i></a>
+                                        <a class="beta-btn primary" href="#">Chi tiết <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>

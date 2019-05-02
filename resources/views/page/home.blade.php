@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="beta-products-list">
-                            <h4>Thú bông mới</h4>
+                            <h4>Thú bông ngẫu nhiên</h4>
                             <div class="beta-products-details">
                                 <p class="pull-left">Tìm thấy {{count($new_product)}} sản phẩm</p>
                                 <div class="clearfix"></div>
@@ -44,7 +44,7 @@
                                             @endif
 
                                             <div class="single-item-header">
-                                                <a href="/product-detail/{{$new->id}}"><img src="source/image/product/{{$new->image}}" alt="" height="250px"></a>
+                                                <a href="/product-detail/{{$new->id}}"><img src="source/image/{{$new->type_id}}/{{$new->image}}" alt="" height="250px"></a>
                                             </div>
                                             <div class="single-item-body">
                                                 <p class="single-item-title">{{$new->name}}</p>
@@ -66,13 +66,12 @@
                                     </div>
                                 @endforeach
                             </div>
-                            <div class="row">{{$new_product->links()}}</div>
                         </div> <!-- .beta-products-list -->
 
                         <div class="space50">&nbsp;</div>
 
                         <div class="beta-products-list">
-                            <h4>Sản phẩm khuyến mãi</h4>
+                            <h4>Thú bông khuyến mãi</h4>
                             <div class="beta-products-details">
                                 <p class="pull-left">Tìm thấy {{count($promo_product)}} sản phẩm</p>
                                 <div class="clearfix"></div>
@@ -86,7 +85,7 @@
                                             @endif
 
                                             <div class="single-item-header">
-                                                <a href="/product-detail/{{$product->id}}"><img src="source/image/product/{{$product->image}}" alt="" height="250px"></a>
+                                                <a href="/product-detail/{{$product->type_id}}"><img src="source/image/{{$product->type_id}}/{{$product->image}}" alt="" height="250px"></a>
                                             </div>
                                             <div class="single-item-body">
                                                 <p class="single-item-title">{{$product->name}}</p>
@@ -97,7 +96,7 @@
                                             </div>
                                             <div class="single-item-caption">
                                                 <a class="add-to-cart pull-left" href="/add-to-cart/{{$product->id}}"><i class="fa fa-shopping-cart"></i></a>
-                                                <a class="beta-btn primary" href="/product-detail/{{$product->id}}">Details <i class="fa fa-chevron-right"></i></a>
+                                                <a class="beta-btn primary" href="/product-detail/{{$product->id}}">Chi tiết <i class="fa fa-chevron-right"></i></a>
                                                 <div class="clearfix"></div>
                                             </div>
                                         </div>

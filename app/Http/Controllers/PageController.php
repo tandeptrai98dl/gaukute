@@ -13,7 +13,7 @@ class PageController extends Controller
 {
     public function getIndex(){
         $slide = Slide::all();
-        $new_product =  Product::where('new',1)->paginate(4);
+        $new_product =  Product::inRandomOrder()->limit(4)->get();
         $promo_product =  Product::where('promotion_price','<>',0)->paginate(8);
         return view('page.home',compact('slide','new_product','promo_product'));
     }
