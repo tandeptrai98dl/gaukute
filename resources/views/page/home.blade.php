@@ -85,7 +85,7 @@
                                             @endif
 
                                             <div class="single-item-header">
-                                                <a href="/product-detail/{{$product->type_id}}"><img src="source/image/{{$product->type_id}}/{{$product->image}}" alt="" height="250px"></a>
+                                                <a href="/product-detail/{{$product->id}}"><img src="source/image/{{$product->type_id}}/{{$product->image}}" alt="" height="250px"></a>
                                             </div>
                                             <div class="single-item-body">
                                                 <p class="single-item-title">{{$product->name}}</p>

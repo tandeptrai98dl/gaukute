@@ -40,7 +40,7 @@
                                     <div class="cart-item">
                                         <a class="cart-item-delete" href="/delete-cart/{{$product['item']['id']}}"><i class="fa fa-times"></i></a>
                                         <div class="media">
-                                            <a class="pull-left" href="#"><img src="source/image/product/{{$product['item']['image']}}" alt=""></a>
+                                            <a class="pull-left" href="#"><img src="source/image/{{$product['item']['type_id']}}/{{$product['item']['image']}}" alt=""></a>
                                             <div class="media-body">
                                                 <span class="cart-item-title">{{$product['item']['name']}}</span>
                                                 <span class="cart-item-amount">{{$product['qty']}} x <span>

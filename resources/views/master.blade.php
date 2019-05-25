@@ -12,7 +12,7 @@
     <link rel="stylesheet" title="style" href="source/assets/dest/css/style.css">
     <link rel="stylesheet" href="source/assets/dest/css/animate.css">
     <link rel="stylesheet" title="style" href="source/assets/dest/css/custom-style.css">
-    <link rel="stylesheet" title="style" href="source/assets/dest/css/boostrap.min.css">
+    <link rel="stylesheet" title="style" href="source/assets/dest/css/bootstrap.min.css">
 </head>
 <body>
 
