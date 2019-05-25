@@ -8,6 +8,8 @@ use App\ProductType;
 use App\Slide;
 use Illuminate\Http\Request;
 use Session;
+use App\User;
+use Hash;
 
 class PageController extends Controller
 {
@@ -59,5 +61,37 @@ class PageController extends Controller
         else
             Session::forget('cart');
         return redirect()->back();
+    }
+    public function getLogin(){
+        return view('page.login');
+    }
+    public function getSignup(){
+        return view('page.signup');
+    }    
+    public function postSignup(Request $req){
+        $this->validate($req,
+            [
+                'email' => 'required|email|unique:users,email',
+                'password' => 'required|min:6|max:32',
+                'fullname' => 'required',
+                're_password' => 'required|same:password'
+            ],
+            [
+                'email.required'=> 'Vui lòng nhập email',
+                'email.email'=> 'Không đúng định dạng email',
+                'email.unique' => 'Email đã sử dụng',
+                'password.required' => 'Mật khẩu không được để trống',
+                're_password.same' =>'Mật khẩu nhập lại không trùng',
+                'password.min' => 'Mật khẩu phải có ít nhất 6 kí tự',
+                'password.max' => 'Mật khẩu quá dài, giới hạn 32 kí tự'
+            ]);
+        $user = new User();
+        $user ->full_name = $req-> fullname;
+        $user ->email =$req ->email;
+        $user ->password = Hash::make($req->password);
+        $user ->phone = $req->phone;
+        $user ->address = $req ->address;    
+        $user ->save();
+        return redirect()->back() ->with('thanhcong','Tạo tài khoản thành công');
     }
 }
