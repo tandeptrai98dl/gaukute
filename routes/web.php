@@ -11,3 +11,6 @@ Route::get('contact', 'PageController@getContact');
 Route::get('about', 'PageController@getAbout');
 Route::get('add-to-cart/{id}', 'PageController@addToCart');
 Route::get('delete-cart/{id}', 'PageController@deleteItemCart');
+Route::get('login', 'PageController@getLogin');
+Route::get('signup', 'PageController@getSignup');
+Route::post('signup', 'PageController@postSignup');
