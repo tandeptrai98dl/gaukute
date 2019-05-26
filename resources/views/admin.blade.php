@@ -110,14 +110,14 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="source/image/icon/obe.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">TanDepTrai</span>
+                            <span class="hidden-xs">Gái Kìa Tân</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="user-header">
                                 <img src="source/image/icon/obe.jpg" class="img-circle" alt="User Image">
                                 <p>
-                                    TanDepTrai - Web Developer
-                                    <small>Member since Nov. 2019</small>
+                                    Gái Kìa Tân
+                                    <small>Member since Dec. 1969</small>
                                 </p>
                             </li>
                             <li class="user-footer">
