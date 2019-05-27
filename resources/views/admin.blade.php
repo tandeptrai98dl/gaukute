@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Starter</title>
+    <title>Gaukute Admin</title>
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="source/assets/dest/css/bootstrap.min.css">
-    <link rel="stylesheet" href="source/assets/dest/css/font-awesome.min.css">
-    <link rel="stylesheet" href="source/assets/dest/css/ionicons.min.css">
-    <link rel="stylesheet" href="source/assets/dest/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="source/assets/dest/css/skin-blue.min.css">
+    <link rel="stylesheet" href="/source/assets/dest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/source/assets/dest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/source/assets/dest/css/ionicons.min.css">
+    <link rel="stylesheet" href="/source/assets/dest/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/source/assets/dest/css/skin-blue.min.css">
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -109,12 +109,12 @@
 
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="source/image/icon/obe.jpg" class="user-image" alt="User Image">
+                            <img src="/source/image/icon/obe.jpg" class="user-image" alt="User Image">
                             <span class="hidden-xs">Gái Kìa Tân</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="user-header">
-                                <img src="source/image/icon/obe.jpg" class="img-circle" alt="User Image">
+                                <img src="/source/image/icon/obe.jpg" class="img-circle" alt="User Image">
                                 <p>
                                     Gái Kìa Tân
                                     <small>Member since Dec. 1969</small>
@@ -141,8 +141,8 @@
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">MAIN NAVIGATION</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-                <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+                <li class="active"><a href="#"><i class="fa fa-github-alt"></i> <span>Link</span></a></li>
+                <li><a href="#"><i class="fa fa-linux"></i> <span>Another Link</span></a></li>
                 <li class="treeview">
                     <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
                         <span class="pull-right-container">
@@ -160,30 +160,14 @@
         <!-- /.sidebar -->
     </aside>
 
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>
-                Page Header
-                <small>Optional description</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-                <li class="active">Here</li>
-            </ol>
-        </section>
+    @yield('content')
 
-        <!-- Main content -->
-        <section class="content container-fluid">
-            @yield('content')
-        </section>
-        <!-- /.content -->
-    </div>
 </div>
 
-<script src="source/assets/dest/js/jquery.min.js"></script>
-<script src="source/assets/dest/js/bootstrap.min.js"></script>
-<script src="source/assets/dest/js/adminlte.min.js"></script>
+<script src="/source/assets/dest/js/jquery.min.js"></script>
+<script src="/source/assets/dest/js/bootstrap.min.js"></script>
+<script src="/source/assets/dest/js/adminlte.min.js"></script>
+@stack('js')
 
 </body>
 </html>

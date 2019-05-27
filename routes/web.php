@@ -4,8 +4,11 @@
 //    return view('welcome');
 //});
 
+Route::resources([
+    'admin'    => 'AdminController',
+]);
+
 Route::get('/', 'PageController@getIndex');
-Route::get('/admin', 'AdminController@getLogin');
 Route::get('product-type/{type}', 'PageController@getProductType');
 Route::get('product-detail/{id}', 'PageController@getProductDetail');
 Route::get('contact', 'PageController@getContact');
