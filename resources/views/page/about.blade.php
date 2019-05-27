@@ -34,7 +34,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="source/image/icon/batanvlog.jpg" alt="">
+                                <img src="upload/icon/batanvlog.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Bà Tân Vlog</h5>
@@ -50,7 +50,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="source/image/icon/quangbkav.jpg" alt="">
+                                <img src="upload/icon/quangbkav.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Nổ Văn Quảng</h5>
@@ -63,7 +63,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="source/image/icon/gates.jpg" alt="">
+                                <img src="upload/icon/gates.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Biu Gết</h5>
@@ -76,7 +76,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="source/image/icon/tim.jpg" alt="">
+                                <img src="upload/icon/tim.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Tim Nấu Ăn</h5>
@@ -89,7 +89,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="source/image/icon/tokuda.jpg" alt="">
+                                <img src="upload/icon/tokuda.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Shigeo Tokuda</h5>
@@ -102,7 +102,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="source/image/icon/khabanh.jpg" alt="">
+                                <img src="upload/icon/khabanh.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Khá Bảnh</h5>
@@ -115,7 +115,7 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="source/image/icon/chutich.jpg" alt="">
+                                <img src="upload/icon/chutich.jpg" alt="">
                             </div>
                             <div class="col-sm-7">
                                 <h5 class="other-title">Chủ tịch</h5>
@@ -184,7 +184,7 @@
             <div class="col-sm-6 wow fadeInLeft">
                 <div class="beta-person media">
 
-                    <img class="pull-left" src="source/image/icon/obe.jpg" alt="">
+                    <img class="pull-left" src="upload/icon/obe.jpg" alt="">
 
                     <div class="media-body beta-person-body">
                         <h5>Bob Robertson</h5>
@@ -197,7 +197,7 @@
             <div class="col-sm-6 wow fadeInRight">
                 <div class="beta-person media ">
 
-                    <img class="pull-left" src="source/image/icon/obe.jpg" alt="">
+                    <img class="pull-left" src="upload/icon/obe.jpg" alt="">
 
                     <div class="media-body beta-person-body">
                         <h5>Mike Greenwood</h5>
@@ -217,7 +217,7 @@
             <div class="col-sm-3">
                 <div class="beta-person beta-person-full">
                     <div class="bets-img-hover">
-                        <img src="source/image/icon/obe.jpg" alt="">
+                        <img src="upload/icon/obe.jpg" alt="">
                     </div>
                     <div class="beta-person-body">
                         <h5>Mark Priston</h5>
@@ -230,7 +230,7 @@
             <div class="col-sm-3">
                 <div class="beta-person beta-person-full">
                     <div class="bets-img-hover">
-                        <img src="source/image/icon/obe.jpg" alt="">
+                        <img src="upload/icon/obe.jpg" alt="">
                     </div>
                     <div class="beta-person-body">
                         <h5>Bob Robertson</h5>

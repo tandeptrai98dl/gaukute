@@ -49,11 +49,11 @@
     <div class="container">
         <p class="pull-left">Privacy policy. (&copy;) 2019</p>
         <p class="pull-right pay-options">
-            <a href="#"><img src="source/image/icon/lazada.jpg" alt="" /></a>
-            <a href="#"><img src="source/image/icon/shopee.jpg" alt="" /></a>
-            <a href="#"><img src="source/image/icon/sendo.jpg" alt="" /></a>
-            <a href="#"><img src="source/image/icon/instagram.jpg" alt="" /></a>
-            <a href="#"><img src="source/image/icon/zalo.jpg" alt="" /></a>
+            <a href="#"><img src="upload/icon/lazada.jpg" alt="" /></a>
+            <a href="#"><img src="upload/icon/shopee.jpg" alt="" /></a>
+            <a href="#"><img src="upload/icon/sendo.jpg" alt="" /></a>
+            <a href="#"><img src="upload/icon/instagram.jpg" alt="" /></a>
+            <a href="#"><img src="upload/icon/zalo.jpg" alt="" /></a>
         </p>
         <div class="clearfix"></div>
     </div> <!-- .container -->

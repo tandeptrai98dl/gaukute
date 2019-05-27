@@ -20,7 +20,7 @@
 
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="source/image/{{$detail->type_id}}/{{$detail->image}}" alt="" height="250px">
+                        <img src="upload/{{$detail->type_id}}/{{$detail->image}}" alt="" height="250px">
                     </div>
                     <div class="col-sm-8">
                         <div class="single-item-body">
@@ -81,7 +81,7 @@
                                     @endif
 
                                     <div class="single-item-header">
-                                        <a href="/product-detail/{{$product->id}}"><img src="source/image/{{$product->type_id}}/{{$product->image}}" alt="" height="250px"></a>
+                                        <a href="/product-detail/{{$product->id}}"><img src="upload/{{$product->type_id}}/{{$product->image}}" alt="" height="250px"></a>
                                     </div>
                                     <div class="single-item-body">
                                         <p class="single-item-title">{{$product->name}}</p>

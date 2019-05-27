@@ -20,7 +20,7 @@
     <div class="header-body">
         <div class="container beta-relative">
             <div class="pull-left">
-                <a href="/" id="logo"><img src="source/image/icon/logo.png" width="80px" alt=""></a>
+                <a href="/" id="logo"><img src="upload/icon/logo.png" width="80px" alt=""></a>
             </div>
             <div class="pull-right beta-components space-left ov">
                 <div class="space10">&nbsp;</div>
@@ -40,7 +40,7 @@
                                     <div class="cart-item">
                                         <a class="cart-item-delete" href="/delete-cart/{{$product['item']['id']}}"><i class="fa fa-times"></i></a>
                                         <div class="media">
-                                            <a class="pull-left" href="#"><img src="source/image/{{$product['item']['type_id']}}/{{$product['item']['image']}}" alt=""></a>
+                                            <a class="pull-left" href="#"><img src="upload/{{$product['item']['type_id']}}/{{$product['item']['image']}}" alt=""></a>
                                             <div class="media-body">
                                                 <span class="cart-item-title">{{$product['item']['name']}}</span>
                                                 <span class="cart-item-amount">{{$product['qty']}} x <span>

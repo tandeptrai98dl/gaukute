@@ -45,7 +45,7 @@
                                         <tr>
                                             <td>{{$value->id }}</td>
                                             <td>{{$value->name}}</td>
-                                            <td><img src="source/image/{{$value->type_id}}/{{$value->image}}" alt="" height="100px"></td>
+                                            <td><img src="upload/{{$value->type_id}}/{{$value->image}}" alt="" height="100px"></td>
                                             <td>{{$value->description}}</td>
                                             <td>{{$value->unit_price}}</td>
                                             <td>{{$value->promotion_price}}</td>
