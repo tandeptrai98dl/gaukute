@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Session;
 use App\User;
 use Hash;
+use Auth;
 
 class PageController extends Controller
 {
@@ -93,5 +94,32 @@ class PageController extends Controller
         $user ->address = $req ->address;    
         $user ->save();
         return redirect()->back() ->with('thanhcong','Tạo tài khoản thành công');
+    }
+    public function postLogin(Request $req){
+        $this->validate($req,
+            [
+                'email'=>'required|email',
+                'password'=>'required|min:6|max:32'
+            ],
+            [
+                'email.required'=>'Vui lòng nhập email',
+                'email.email'=>'Email không đúng định dạng',
+                'password.required'=>'Vui lòng nhập mật khẩu',
+                'password.min'=>'Mật khẩu ít nhất 6 kí tự',
+                'password.max'=>'Mật khẩu tối đa 32 kí tự'
+            ]
+            );
+            $credentials = array('email'=>$req->email,'password'=> $req->password);
+            if(Auth::attempt($credentials)){
+                return redirect()->back()->with(['flag'=>'success','message'=>'Đăng nhập thành công | Login Successed']);
+            }
+            else{
+                return redirect()->back()->with(['flag'=>'danger','message'=> 'Đăng nhập không thành công | Login Failed']);
+            }
+            
+    }
+    public function getLogout(){
+        Auth::logout();
+        return redirect()->route('home');
     }
 }
