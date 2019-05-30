@@ -2,9 +2,6 @@
 @section('content')
 <div class="inner-header">
 		<div class="container">
-			<div class="pull-left">
-				<h6 class="inner-title">Đăng kí</h6>
-			</div>
 			<div class="pull-right">
 				<div class="beta-breadcrumb">
 					<a href="index.html">Home</a> / <span>Đăng kí</span>
@@ -34,7 +31,6 @@
 					<div class="col-sm-6">
 						<h4>Đăng kí</h4>
 						<div class="space20">&nbsp;</div>
-
 						
 						<div class="form-block">
 							<label for="email">Email address*</label>
@@ -48,9 +44,8 @@
 
 						<div class="form-block">
 							<label for="adress">Address*</label>
-							<input type="text" name="adress" value="Street Address" required>
+							<input type="text" name="adress" required>
 						</div>
-
 
 						<div class="form-block">
 							<label for="phone">Phone*</label>
