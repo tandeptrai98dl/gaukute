@@ -2,12 +2,9 @@
 @section('content')
 <div class="inner-header">
     <div class="container">
-        <div class="pull-left">
-            <h6 class="inner-title">Contacts</h6>
-        </div>
         <div class="pull-right">
             <div class="beta-breadcrumb font-large">
-                <a href="index.html">Home</a> / <span>Contacts</span>
+                <a href="index.html">Home</a> / <span>Liên hệ</span>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -51,9 +48,9 @@
 
                 <h6 class="contact-title">Địa chỉ</h6>
                 <p>
-                    Khu phố 6 - P.Linh Trung,<br>
-                    Q.Thủ Đức<br>
-                    HCMC
+                    Đại học Công nghệ Thông tin UIT<br>
+                    Khu phố 6, P.Linh Trung, Q.Thủ Đức<br>
+                    Tp.Hồ Chí Minh
                 </p>
                 <div class="space20">&nbsp;</div>
                 <h6 class="contact-title">Thắc mắc về Độ Trẩu liên hệ</h6>
@@ -62,11 +59,9 @@
                     <a href="mailto:biz@betadesign.com">dxdspirit123@gmail.com</a>
                 </p>
                 <div class="space20">&nbsp;</div>
-                <h6 class="contact-title">Kênh Tân Vlog</h6>
+                <h6 class="contact-title">Kênh Youtube</h6>
                 <p>
-                    Tân Ngáo Đá Vê Lốc<br>
-                    Khu AG4 - KTX A - DHQG -HCMC<br>
-                    <a href="https://www.youtube.com/channel/UCVEa49SSGKMXv1JrcEoEx_A">Tân Vlog</a>
+                    <a href="https://www.youtube.com/channel/UCVEa49SSGKMXv1JrcEoEx_A">Tân Vê Lốc</a>
                 </p>
             </div>
         </div>

@@ -1,4 +1,4 @@
-@extend('master')
+@extends('master')
 @section('content')
 <div class="container">
         <div id="content" class="space-top-none">
@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="beta-products-list">
-                            <h4>Thú bông ngẫu nhiên</h4>
+                            <h4>Kết quả Tìm kiếm</h4>
                             <div class="beta-products-details">
                                 <p class="pull-left">Tìm thấy {{count($product)}} sản phẩm</p>
                                 <div class="clearfix"></div>
