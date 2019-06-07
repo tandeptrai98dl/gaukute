@@ -22,3 +22,10 @@
 .single-item-caption{
     margin: 20px 0px 20px 50px;
 }
+
+.form-block input {
+    height: 30px !important;
+    padding: 0px 12px;
+    color: dodgerblue;
+    border: 1px solid;
+}
