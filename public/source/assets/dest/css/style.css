@@ -1462,7 +1462,8 @@ ul.sub-menu ul.sub-menu li:hover>a, ul.children ul.children li:hover>a {
 
 .your-order-f18 {
     font-size: 18px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    color: red;
 }
 
 .star-rating {
@@ -1595,7 +1596,8 @@ ul.sub-menu ul.sub-menu li:hover>a, ul.children ul.children li:hover>a {
     background: #fff;
     border: 1px solid #e1e1e1;
     padding: 0 10px 10px;
-    cursor: default
+    cursor: default;
+    width: 30%;
 }
 
 .cart-item {

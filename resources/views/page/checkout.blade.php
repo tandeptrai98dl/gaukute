@@ -1,10 +1,7 @@
 @extends('master')
 @section('content')
-<div class="inner-header">
+	<div class="inner-header">
 		<div class="container">
-			<div class="pull-left">
-				<h6 class="inner-title">Đặt hàng</h6>
-			</div>
 			<div class="pull-right">
 				<div class="beta-breadcrumb">
 					<a href="/">Trang chủ</a> / <span>Đặt hàng</span>
@@ -16,10 +13,10 @@
 	
 	<div class="container">
 		<div id="content">
-			
+
 			<form action="/checkout" method="post" class="beta-form-checkout">
 				<input type="hidden" name="_token" value="{{csrf_token()}}">
-				<div class ="row">@if(Session::has('message')){{Session::get('message')}}@endif</div>
+
 				<div class="row">
 					<div class="col-sm-6">
 						<h4>Thông tin khách hàng</h4>
@@ -29,32 +26,31 @@
 							<label for="name">Họ tên*</label>
 							<input type="text" id="name" name ="name" placeholder="Họ tên" required>
 						</div>
+
 						<div class="form-block">
-							<label>Giới tính </label>
-							<input id="gender" type="radio" class="input-radio" name="gender" value="nam" checked="checked" style="width: 10%"><span style="margin-right: 10%">Nam</span>
-							<input id="gender" type="radio" class="input-radio" name="gender" value="nữ" style="width: 10%"><span>Nữ</span>
-										
+							<label>Giới tính</label>
+							<input id="gender" type="radio" class="input-radio" name="gender" value="nam" checked="checked" style="width: 20px"><span style="margin-right: 10%">Nam</span>
+							<input id="gender" type="radio" class="input-radio" name="gender" value="nữ" style="width: 20px"><span>Nữ</span>
 						</div>
 
 						<div class="form-block">
 							<label for="email">Email*</label>
-							<input type="email" name="email" id="email" required placeholder="Daideptrai@gmail.com">
+							<input type="email" name="email" id="email" placeholder="Email" required>
 						</div>
 
 						<div class="form-block">
 							<label for="adress">Địa chỉ*</label>
-							<input type="text" name = "address" id="adress" placeholder="Street Address" required>
+							<input type="text" name="address" id="adress" placeholder="Địa chỉ" required>
 						</div>
-						
 
 						<div class="form-block">
 							<label for="phone">Điện thoại*</label>
-							<input type="text" name ="phone" id="phone" required>
+							<input type="text" name="phone" id="phone" placeholder="Điện thoại" required>
 						</div>
 						
 						<div class="form-block">
 							<label for="notes">Ghi chú</label>
-							<textarea name = "notes" id="notes"></textarea>
+							<textarea name = "notes" id="notes" placeholder="Ghi chú"></textarea>
 						</div>
 					</div>
 					<div class="col-sm-6">
@@ -63,32 +59,31 @@
 							<div class="your-order-body" style="padding: 0px 10px">
 								<div class="your-order-item">
 									<div>
-									@if(Session::has('cart'))
-									@foreach($product_cart as $cart)
-									<!--  one item	 -->
-										<div class="media">
-											<img width="25%" src="" alt="" class="pull-left">
-											<div class="media-body">
-												<p class="font-large">{{$cart['item']['name']}} </p>
-												<span class="color-gray your-order-info">Số lượng: {{$cart['qty']}}</span>
-												<span class="color-gray your-order-info">Đơn giá: {{number_format($cart['price']/$cart['qty'])}} Đồng</span>
-												
+										@if(Session::has('cart'))
+										@foreach($product_cart as $cart)
+										<!--  one item	 -->
+											<div class="media">
+												<img width="25%" src="" alt="" class="pull-left">
+												<div class="media-body">
+													<p class="font-large">{{$cart['item']['name']}} </p>
+													<span class="color-gray your-order-info">Số lượng: {{$cart['qty']}}</span>
+													<span class="color-gray your-order-info">Đơn giá: {{number_format($cart['price']/$cart['qty'])}}₫</span>
+												</div>
 											</div>
-										</div>
-									<!-- end one item -->
-									@endforeach
-									@endif
+										<!-- end one item -->
+										@endforeach
+										@endif
 									</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="your-order-item">
 									<div class="pull-left"><p class="your-order-f18">Tổng tiền:</p></div>
-									<div class="pull-right"><h5 class="color-black">{{number_format($totalPrice)}} Đồng</h5></div>
+									<div class="pull-right"><p class="your-order-f18">{{number_format($totalPrice)}}₫</p></div>
 									<div class="clearfix"></div>
 								</div>
 							</div>
+
 							<div class="your-order-head"><h5>Hình thức thanh toán</h5></div>
-							
 							<div class="your-order-body">
 								<ul class="payment_methods methods">
 									<li class="payment_method_bacs">
@@ -105,11 +100,10 @@
 										<div class="payment_box payment_method_cheque" style="display: none;">
 											Chuyển tiền đến tài khoản sau:
 											<br>- Số tài khoản: 123 456 789
-											<br>- Chủ TK: Nguyễn A
-											<br>- Ngân hàng ACB, Chi nhánh TPHCM
+											<br>- Chủ TK: Tân Vê Lốc
+											<br>- Ngân hàng ABC, Chi nhánh TPHCM
 										</div>						
 									</li>
-									
 								</ul>
 							</div>
 

@@ -96,7 +96,7 @@ class PageController extends Controller
         $user ->phone     = $req->phone;
         $user ->address   = $req ->address;
         $user ->save();
-        return redirect()->back() ->with('thanhcong','Tạo tài khoản thành công');
+        return redirect()->route('home')->with('message','Tạo tài khoản thành công');
     }
 
     public function postLogin(Request $req){
@@ -117,7 +117,7 @@ class PageController extends Controller
             if ($user['role'] == 1)
                 return redirect()->action('AdminController@index');
             else
-                return redirect()->route('home');
+                return redirect()->route('home')->with('message','Đăng nhập thành công');
         }
         else{
             return redirect()->back()->with(['flag'=>'danger','message'=> 'Đăng nhập không thành công | Login Failed']);
@@ -177,6 +177,6 @@ class PageController extends Controller
             $bill_detail->save();
         }
         Session::forget('cart');
-        return redirect()->back()->with('message', 'Ðặt hàng thành công');
+        return redirect()->route('home')->with('message', 'Ðặt hàng thành công! Thank you very much <3.');
     }
 }

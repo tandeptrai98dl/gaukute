@@ -1,5 +1,26 @@
 @extends('master')
 @section('content')
+
+    <div class ="row">
+        @if(Session::has('message'))
+            <div id="myModal" class="modal show">
+                <div class="modal-dialog modal-confirm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Awesome!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center">{{Session::get('message')}}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-success btn-block" id="hiden_modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endif
+    </div>
+
     <div class="rev-slider">
         <div class="fullwidthbanner-container">
             <div class="fullwidthbanner">

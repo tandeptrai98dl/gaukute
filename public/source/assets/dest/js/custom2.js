@@ -152,7 +152,12 @@ wow.init();
         jQuery(this).addClass('icon-angle-left');
       }
     });
-	
+
+    jQuery('#hiden_modal').click(function(e){
+        $('#myModal').removeClass('modal show').addClass('modal hide');
+    });
+
+
 
 	});
 
