@@ -30,3 +30,5 @@ Route::post('login', 'PageController@postLogin');
 Route::get('signup', 'PageController@getSignup');
 Route::post('signup', 'PageController@postSignup');
 Route::get('logout', 'PageController@getLogout');
+route::get('checkout', 'PageController@getCheckout');
+route::post('checkout', 'PageController@postCheckout');

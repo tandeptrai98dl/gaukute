@@ -11,7 +11,9 @@ use Session;
 use App\User;
 use Hash;
 use Auth;
-
+use App\Customer;
+use App\Bill;
+use App\BillDetail;
 class PageController extends Controller
 {
     public function getIndex(){
@@ -121,5 +123,47 @@ class PageController extends Controller
                             ->orWhere('unit_price',$req->key)
                             ->get();
         return view('page.search',compact('product'));
+    }
+    public function getCheckout(){
+        if(Session::has('cart')){
+            $old_cart = Session::get('cart');
+            $cart = new Cart($old_cart);
+            return view('page.checkout',
+                        [
+                            'product_cart' =>$cart->items, 
+                            'totalPrice' =>$cart->total_price, 
+                            'totalQty'=>$cart->total_qty
+                        ]);
+        }
+    }   
+    public function postCheckout(Request $req){
+        $cart = Session::get('cart');
+        $customer = new Customer;
+        $customer->name = $req->name;
+        $customer->gender = $req->gender;
+        $customer->email = $req->email;
+        $customer->address = $req->address;
+        $customer->phone_number =$req->phone;
+        $customer->note = $req->notes;
+        $customer->save();
+
+        $bill = new Bill;
+        $bill->customer_id= $customer->id;
+        $bill->date_order = date('Y-m-d');
+        $bill->total = $cart->total_price;
+        $bill->payment = $req->payment_method;
+        $bill->note = $req->notes;
+        $bill->save();
+
+        foreach($cart->items as $key=>$value){
+            $bill_detail = new BillDetail;
+            $bill_detail->bill_id = $bill->id;
+            $bill_detail->product_id = $key;
+            $bill_detail->quantity = $value['qty'];
+            $bill_detail->unit_price = ($value['price']/$value['qty']);
+            $bill_detail->save();
+        }
+        Session::forget('cart');
+        return redirect()->back()->with('message', 'Ðặt hàng thành công');
     }
 }
