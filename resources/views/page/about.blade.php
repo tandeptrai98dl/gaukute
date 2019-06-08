@@ -129,141 +129,52 @@
         <div class="space50">&nbsp;</div>
         <hr />
         <div class="space50">&nbsp;</div>
-        <h2 class="text-center wow fadeInDown">Our Passion for What We Do Transfers Into Our Services</h2>
+        <h2 class="text-center wow fadeInDown">Chào các cháu. Gấu bông online được như ngày hôm nay cũng một phần nhờ vào các cháu</h2>
         <div class="space20">&nbsp;</div>
-        <p class="text-center wow fadeInLeft">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br /> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <p class="text-center wow fadeInLeft"></p>
         <div class="space35">&nbsp;</div>
-
-        <div class="row">
-            <div class="col-sm-2 col-sm-push-2">
-                <div class="beta-counter">
-                    <p class="beta-counter-icon"><i class="fa fa-user"></i></p>
-                    <p class="beta-counter-value timer numbers" data-to="19855" data-speed="2000">19855</p>
-                    <p class="beta-counter-title">Clients Satisfied</p>
-                </div>
-            </div>
-
-            <div class="col-sm-2 col-sm-push-2">
-                <div class="beta-counter">
-                    <p class="beta-counter-icon"><i class="fa fa-picture-o"></i></p>
-                    <p class="beta-counter-value timer numbers" data-to="3568" data-speed="2000">3568</p>
-                    <p class="beta-counter-title">Amazing Works</p>
-                </div>
-            </div>
-
-            <div class="col-sm-2 col-sm-push-2">
-                <div class="beta-counter">
-                    <p class="beta-counter-icon"><i class="fa fa-clock-o"></i></p>
-                    <p class="beta-counter-value timer numbers" data-to="258934" data-speed="2000">258934</p>
-                    <p class="beta-counter-title">Support Hours</p>
-                </div>
-            </div>
-
-            <div class="col-sm-2 col-sm-push-2">
-                <div class="beta-counter">
-                    <p class="beta-counter-icon"><i class="fa fa-pencil"></i></p>
-                    <p class="beta-counter-value timer numbers" data-to="150" data-speed="2000">150</p>
-                    <p class="beta-counter-title">New Projects</p>
-                </div>
-            </div>
-        </div> <!-- .beta-counter block end -->
-
         <div class="space50">&nbsp;</div>
         <hr />
         <div class="space50">&nbsp;</div>
 
-        <h2 class="text-center wow fadeInDownwow fadeInDown">Our Amaizing Team</h2>
+        <h2 class="text-center wow fadeInDownwow fadeInDown">Những con chym gáy triển vọng</h2>
         <div class="space20">&nbsp;</div>
         <h5 class="text-center other-title wow fadeInLeft">Founders</h5>
-        <p class="text-center wow fadeInRight">Nemo enims voluptatem quia volupas sit aspe aut odit aut fugit, sed quia <br />consequuntur magni dolores.</p>
+        
         <div class="space20">&nbsp;</div>
         <div class="row">
             <div class="col-sm-6 wow fadeInLeft">
                 <div class="beta-person media">
 
-                    <img class="pull-left" src="upload/icon/obe.jpg" alt="">
+                    <img class="pull-left" src="upload/icon/tan.jpg" alt="">
 
                     <div class="media-body beta-person-body">
-                        <h5>Bob Robertson</h5>
-                        <p class="font-large">Founder</p>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit asatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque por quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-                        <a href="single_type_gallery.html">View projects <i class="fa fa-chevron-right"></i></a>
+                        <h4><strong>Tân Vlog</strong></h4>
+                        <p class="font-large">Chym gáy 1</p>
+                        <p>Cá nhân đặc biệt với khả năng làm vlog siêu to, siêu cay. 
+                            Có sở thích tập tạ, ăn chuối và uống sữa.
+                            Đặc biệt về độ trẩu thì anh ấy là fan của Rich Choi và Khá bảnh.
+                            Hai trong số những thằng trẻ trâu nhất Việt Nam. 
+                            Tất cả điều đó cho thấy tỉ lệ có bồ của anh ấy ở mức thấp kỉ lục và không bất ngờ gì khi 21 tuổi rồi anh ấy vẫn FA. =)))))))))))))))))))))))))))))))</p>
+                        <a href="https://www.facebook.com/nhattan.nguyenhoang.98">Facebook<i class="fa fa-chevron-right"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 wow fadeInRight">
                 <div class="beta-person media ">
 
-                    <img class="pull-left" src="upload/icon/obe.jpg" alt="">
+                    <img class="pull-left" src="upload/icon/dai.jpg" alt="">
 
                     <div class="media-body beta-person-body">
-                        <h5>Mike Greenwood</h5>
-                        <p class="font-large">Founder</p>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit asatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque por quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-                        <a href="single_type_gallery.html">View projects <i class="fa fa-chevron-right"></i></a>
+                        <h4><strong>Đại đẹp trai</strong></h4>
+                        <p class="font-large">Chym gáy 2</p>
+                        <p>Gáy xuyên lục địa với những kì tích đáng nẻ phục. Anh từng tham gia cuộc thi gáy tranh cúp thế giới, cúp gáy nhà nghề, Cúp lộn xào championship và hàng loạt giải đấu lớn mà có kể một cả ngày cũng không hết. Với kinh nghiệm hàng chục năm. Anh ấy là một mẫu hình tượng cho giới trẻ hiện nay. </p>
+                        <a href="https://www.facebook.com/dxdspirit">Facebook<i class="fa fa-chevron-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="space60">&nbsp;</div>
-        <h5 class="text-center other-title wow fadeInDown">The Best of Professionals</h5>
-        <p class="text-center wow fadeInUp">Nemo enims voluptatem quia volupas sit aspe aut odit aut fugit, sed quia <br />consequuntur magni dolores.</p>
-        <div class="space20">&nbsp;</div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="beta-person beta-person-full">
-                    <div class="bets-img-hover">
-                        <img src="upload/icon/obe.jpg" alt="">
-                    </div>
-                    <div class="beta-person-body">
-                        <h5>Mark Priston</h5>
-                        <p class="font-large">Web developer</p>
-                        <p>Nemo enims voluptatem quia volupas sit aspe aut odit aut fugit, sed quia consequuntur magni dolores.</p>
-                        <a href="single_type_gallery.html">View projects <i class="fa fa-chevron-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="beta-person beta-person-full">
-                    <div class="bets-img-hover">
-                        <img src="upload/icon/obe.jpg" alt="">
-                    </div>
-                    <div class="beta-person-body">
-                        <h5>Bob Robertson</h5>
-                        <p class="font-large">Web developer</p>
-                        <p>Nemo enims voluptatem quia volupas sit aspe aut odit aut fugit, sed quia consequuntur magni dolores.</p>
-                        <a href="single_type_gallery.html">View projects <i class="fa fa-chevron-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="beta-person beta-person-full">
-                    <div class="bets-img-hover">
-                        <img src="" alt="">
-                    </div>
-                    <div class="beta-person-body">
-                        <h5>Mike Greenwood</h5>
-                        <p class="font-large">Web developer</p>
-                        <p>Nemo enims voluptatem quia volupas sit aspe aut odit aut fugit, sed quia consequuntur magni dolores.</p>
-                        <a href="single_type_gallery.html">View projects <i class="fa fa-chevron-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="beta-person beta-person-full">
-                    <div class="bets-img-hover">
-                        <img src="" alt="">
-                    </div>
-                    <div class="beta-person-body">
-                        <h5>David Black</h5>
-                        <p class="font-large">Web developer</p>
-                        <p>Nemo enims voluptatem quia volupas sit aspe aut odit aut fugit, sed quia consequuntur magni dolores.</p>
-                        <a href="single_type_gallery.html">View projects <i class="fa fa-chevron-right"></i></a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div> <!-- #content -->
 </div> <!-- .container -->
-@endsection
+@endsection 
