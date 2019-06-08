@@ -149,7 +149,7 @@
                     <img class="pull-left" src="upload/icon/tan.jpg" alt="">
 
                     <div class="media-body beta-person-body">
-                        <h4><strong>Tân Vlog</strong></h4>
+                        <h4><strong>Tân Vê Lốc</strong></h4>
                         <p class="font-large">Chym gáy 1</p>
                         <p>Cá nhân đặc biệt với khả năng làm vlog siêu to, siêu cay. 
                             Có sở thích tập tạ, ăn chuối và uống sữa.
