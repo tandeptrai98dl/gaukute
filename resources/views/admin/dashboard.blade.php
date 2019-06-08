@@ -50,8 +50,8 @@
                                             <td>{{$value->unit_price}}</td>
                                             <td>{{$value->promotion_price}}</td>
                                             <td>
-                                                <a href="" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"> Edit</i></a>
-                                                <a href="" class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-pencil" aria-hidden="true"> Delete</i></a>
+                                                <a href="{{action('AdminController@show',['id'=> $value->id])}}" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"> Edit</i></a>
+                                                <a href="{{action('AdminController@destroy',['id'=> $value->id])}}" class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash-o" aria-hidden="true"> Delete</i></a>
                                             </td>
                                         </tr>
                                     @endforeach

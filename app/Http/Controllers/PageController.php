@@ -6,14 +6,16 @@ use App\Cart;
 use App\Product;
 use App\ProductType;
 use App\Slide;
-use Illuminate\Http\Request;
-use Session;
 use App\User;
-use Hash;
-use Auth;
 use App\Customer;
 use App\Bill;
 use App\BillDetail;
+
+use Illuminate\Http\Request;
+use Session;
+use Hash;
+use Auth;
+
 class PageController extends Controller
 {
     public function getIndex(){
@@ -65,12 +67,15 @@ class PageController extends Controller
             Session::forget('cart');
         return redirect()->back();
     }
+
     public function getLogin(){
         return view('page.login');
     }
+
     public function getSignup(){
         return view('page.signup');
-    }    
+    }
+
     public function postSignup(Request $req){
         $this->validate($req,
             [
@@ -93,6 +98,7 @@ class PageController extends Controller
         $user ->save();
         return redirect()->back() ->with('thanhcong','Tạo tài khoản thành công');
     }
+
     public function postLogin(Request $req){
         $this->validate($req,
             [
@@ -105,25 +111,31 @@ class PageController extends Controller
                 'password.max'=>'Mật khẩu tối đa 32 kí tự'
             ]
             );
-            $credentials = array('email'=>$req->email,'password'=> $req->password);
-            if(Auth::attempt($credentials)){
-                return redirect()->back()->with(['flag'=>'success','message'=>'Đăng nhập thành công | Login Successed']);
-            }
-            else{
-                return redirect()->back()->with(['flag'=>'danger','message'=> 'Đăng nhập không thành công | Login Failed']);
-            }
-            
+        $credentials = array('email'=>$req->email,'password'=> $req->password);
+        if(Auth::attempt($credentials)){
+            $user = Auth::user();
+            if ($user['role'] == 1)
+                return redirect()->action('AdminController@index');
+            else
+                return redirect()->route('home');
+        }
+        else{
+            return redirect()->back()->with(['flag'=>'danger','message'=> 'Đăng nhập không thành công | Login Failed']);
+        }
     }
+
     public function getLogout(){
         Auth::logout();
         return redirect()->route('home');
     }
+
     public function getSearch(Request $req){
         $product = Product::Where('name','like','%'.$req->key.'%')
                             ->orWhere('unit_price',$req->key)
                             ->get();
         return view('page.search',compact('product'));
     }
+
     public function getCheckout(){
         if(Session::has('cart')){
             $old_cart = Session::get('cart');
@@ -135,7 +147,8 @@ class PageController extends Controller
                             'totalQty'=>$cart->total_qty
                         ]);
         }
-    }   
+    }
+
     public function postCheckout(Request $req){
         $cart = Session::get('cart');
         $customer = new Customer;

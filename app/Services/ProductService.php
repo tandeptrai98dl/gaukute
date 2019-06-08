@@ -12,7 +12,8 @@ class ProductService
             $product = Product::create( [
                 'name'              => $input['name'],
                 'type_id'           => $input['type_id'],
-                'unit_price'        => $input['price'],
+                'description'       => $input['description'],
+                'unit_price'        => $input['unit_price'],
                 'promotion_price'   => $input['promotion_price'],
                 'image'             => $input['image']
             ] );
@@ -23,6 +24,19 @@ class ProductService
         } catch (\Exception $e) {
             DB::rollback();
             die($e->getMessage());
+            return false;
+        }
+    }
+
+    public static function delete($product)
+    {
+        DB::beginTransaction();
+        try {
+            $product->delete();
+            DB::commit();
+            return true;
+        } catch (\Exception $e) {
+            DB::rollback();
             return false;
         }
     }
