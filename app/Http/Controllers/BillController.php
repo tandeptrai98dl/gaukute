@@ -12,6 +12,7 @@ class BillController
         ->join('customer', 'bills.customer_id', '=', 'customer.id')
         ->select('bills.*', 'customer.name')
         ->get();
+        return view('admin.bill_dashboard',compact('bills'));
     }
 
 }

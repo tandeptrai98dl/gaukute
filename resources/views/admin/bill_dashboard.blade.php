@@ -29,7 +29,6 @@
                                 <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Customer ID</th>
                                     <th>Customer Name</th>
                                     <th>Order date</th>
                                     <th>Bill amount</th>
@@ -41,22 +40,15 @@
                                     @foreach($bills as $value)
                                         <tr>
                                             <td>{{$value->id }}</td>
-                                            <td>{{$value->customer_id}}</td>
                                             <td>{{$value->name}}</td>
                                             <td>{{$value->date_order}}</td>
                                             <td>{{$value->total}}</td>
                                             <td>{{$value->payment}}</td>
                                             <td>{{$value->note}}</td>
-                                            
                                         </tr>
                                     @endforeach
                                 </tbody>
                             </table>
-                            <div class="pagination-wrapper">
-                                <div class="row pull-right">
-                                    {{ $bills->links() }}
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
