@@ -23,9 +23,6 @@
 
             <div class="col-md-12">
                 <div class="box">
-                    <div class="box-header">
-                        <a href="{{action('AdminController@QLDH_create')}}" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"> Create</i></a>
-                    </div>
                     <div class="box-body">
                         <div class="table-responsive">
                             <table class="table table-borderless" id="mail-table">
