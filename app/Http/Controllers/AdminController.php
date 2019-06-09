@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use App\ProductType;
-use App\Bill;
-use App\BillDetail;
 use App\Services\ProductService;
 use Illuminate\Http\Request;
 
@@ -16,16 +14,13 @@ class AdminController extends Controller
         $products = Product::paginate(15);
         return view('admin.dashboard',compact('products'));
     }
-    public function QLDH_index(){
-        $bills = Bill::paginate(15);
-        return view('admin.QLDH_dashboard',compact('bills'));
-    }
 
     public function show($id){
         $type     = ProductType::all();
         $detail   = Product::where('id',$id)->first();
         return view('admin.edit',compact('type','detail'));
     }
+
     public function store(Request $request){
         $input = $request->all();
         $file  = $input['image'];
@@ -47,7 +42,6 @@ class AdminController extends Controller
         $type     = ProductType::all();
         return view('admin.create',compact('type'));
     }
-   
 
     public function update(Request $request, $id){
         $input = $request->all();

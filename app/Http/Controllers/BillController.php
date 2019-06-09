@@ -15,4 +15,14 @@ class BillController
         return view('admin.bill_dashboard',compact('bills'));
     }
 
+    public function edit($id){
+        $detail   = Bill::where('id',$id)->update(['status' => 1]);
+        if($detail){
+            return redirect()->action('BillController@index')
+                ->with('message', trans('Update successfully!'));
+        }
+        return redirect()->action('BillController@index')
+            ->with('error', trans('Failed to update!'));
+    }
+
 }

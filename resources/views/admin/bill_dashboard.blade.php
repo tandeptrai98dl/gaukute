@@ -34,6 +34,7 @@
                                     <th>Bill amount</th>
                                     <th>Payment method</th>
                                     <th>Notes</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -42,9 +43,18 @@
                                             <td>{{$value->id }}</td>
                                             <td>{{$value->name}}</td>
                                             <td>{{$value->date_order}}</td>
-                                            <td>{{$value->total}}</td>
+                                            <td>{{number_format($value->total)}}₫</td>
                                             <td>{{$value->payment}}</td>
                                             <td>{{$value->note}}</td>
+                                            @if($value->status == 0)
+                                                <td>
+                                                    <a href="{{action('BillController@edit',['id'=> $value->id])}}" class="btn btn-warning"><i class="fa fa-bolt" aria-hidden="true"> Confirm</i></a>
+                                                </td>
+                                            @else
+                                                <td>
+                                                    <a class="btn btn-success"><i class="fa fa-check" aria-hidden="true"> Done</i></a>
+                                                </td>
+                                            @endif
                                         </tr>
                                     @endforeach
                                 </tbody>

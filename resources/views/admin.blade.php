@@ -143,6 +143,7 @@
                 <!-- Optionally, you can add icons to the links -->
                 <li><a href="/admin/product"><i class="fa fa-github-alt"></i> <span>Sản Phẩm</span></a></li>
                 <li><a href="/admin/bill"><i class="fa fa-shopping-cart"></i> <span>Đơn Hàng</span></a></li>
+                <li><a href="/admin/user"><i class="fa fa-user"></i> <span>Users</span></a></li>
             </ul>
             <!-- /.sidebar-menu -->
         </section>

@@ -7,6 +7,7 @@
 Route::resources([
     'admin/product'    => 'AdminController',
     'admin/bill'       => 'BillController',
+    'admin/user'       => 'UserController',
 ]);
 
 Route::get('/' ,
