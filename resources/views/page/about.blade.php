@@ -129,7 +129,7 @@
         <div class="space50">&nbsp;</div>
         <hr />
         <div class="space50">&nbsp;</div>
-        <h2 class="text-center wow fadeInDown">Chào các cháu. Gấu bông online được như ngày hôm nay cũng một phần nhờ vào các cháu</h2>
+        <h2 class="text-center wow fadeInDown">Chào các cháu nhaa <br> Gấu bông online được như ngày hôm nay cũng một phần nhờ vào các cháu</h2>
         <div class="space20">&nbsp;</div>
         <p class="text-center wow fadeInLeft"></p>
         <div class="space35">&nbsp;</div>
@@ -137,25 +137,24 @@
         <hr />
         <div class="space50">&nbsp;</div>
 
-        <h2 class="text-center wow fadeInDownwow fadeInDown">Những con chym gáy triển vọng</h2>
+        <h2 class="text-center wow fadeInDownwow fadeInDown">Đội Dev cùi bắp </h2>
         <div class="space20">&nbsp;</div>
-        <h5 class="text-center other-title wow fadeInLeft">Founders</h5>
         
         <div class="space20">&nbsp;</div>
         <div class="row">
             <div class="col-sm-6 wow fadeInLeft">
                 <div class="beta-person media">
 
-                    <img class="pull-left" src="upload/icon/tan.jpg" alt="">
+                    <img class="pull-left" src="upload/icon/tan.jpg" alt="" height="555" width="545">
 
                     <div class="media-body beta-person-body">
-                        <h4><strong>Tân Vlog</strong></h4>
-                        <p class="font-large">Chym gáy 1</p>
-                        <p>Cá nhân đặc biệt với khả năng làm vlog siêu to, siêu cay. 
-                            Có sở thích tập tạ, ăn chuối và uống sữa.
-                            Đặc biệt về độ trẩu thì anh ấy là fan của Rich Choi và Khá bảnh.
-                            Hai trong số những thằng trẻ trâu nhất Việt Nam. 
-                            Tất cả điều đó cho thấy tỉ lệ có bồ của anh ấy ở mức thấp kỉ lục và không bất ngờ gì khi 21 tuổi rồi anh ấy vẫn FA. =)))))))))))))))))))))))))))))))</p>
+                        <h4><strong>Tân Vê Lốc</strong></h4>
+                        <p class="font-large">Đẹp Trai Nhất Xóm</p>
+                        <p>Có sở thích tập tạ, uống sữa.<br>
+                            Có xe đạp riêng<br>
+                            Ở đâu còn lâu mới nói<br>
+                            Tuy không cao nhưng được cái "lắm tiền", Liên hệ để vay nợ :))
+                        </p>
                         <a href="https://www.facebook.com/nhattan.nguyenhoang.98">Facebook<i class="fa fa-chevron-right"></i></a>
                     </div>
                 </div>
@@ -163,11 +162,11 @@
             <div class="col-sm-6 wow fadeInRight">
                 <div class="beta-person media ">
 
-                    <img class="pull-left" src="upload/icon/dai.jpg" alt="">
+                    <img class="pull-left" src="upload/icon/dai.jpg" alt="" height="555" width="545">
 
                     <div class="media-body beta-person-body">
-                        <h4><strong>Đại đẹp trai</strong></h4>
-                        <p class="font-large">Chym gáy 2</p>
+                        <h4><strong>Đại Kon Gà</strong></h4>
+                        <p class="font-large">Chym gáy</p>
                         <p>Gáy xuyên lục địa với những kì tích đáng nẻ phục. Anh từng tham gia cuộc thi gáy tranh cúp thế giới, cúp gáy nhà nghề, Cúp lộn xào championship và hàng loạt giải đấu lớn mà có kể một cả ngày cũng không hết. Với kinh nghiệm hàng chục năm. Anh ấy là một mẫu hình tượng cho giới trẻ hiện nay. </p>
                         <a href="https://www.facebook.com/dxdspirit">Facebook<i class="fa fa-chevron-right"></i></a>
                     </div>
