@@ -5,7 +5,8 @@
 //});
 
 Route::resources([
-    'admin'    => 'AdminController'
+    'admin/product'    => 'AdminController',
+    'admin/bill'       => 'BillController',
 ]);
 
 Route::get('/' ,

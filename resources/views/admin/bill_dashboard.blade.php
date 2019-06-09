@@ -44,7 +44,7 @@
                                             <td>{{$value->date_order}}</td>
                                             <td>{{$value->total}}</td>
                                             <td>{{$value->payment}}</td>
-                                            <td>{{$value->note</td>
+                                            <td>{{$value->note}}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>

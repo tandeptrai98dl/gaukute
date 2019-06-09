@@ -20,7 +20,7 @@
 <div class="wrapper">
     <header class="main-header">
 
-        <a href="/admin" class="logo">
+        <a href="#" class="logo">
             <span class="logo-lg"><b>Gaukute</b> Admin</span>
         </a>
 
@@ -141,14 +141,14 @@
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">MAIN NAVIGATION</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li class="active"><a href="{{action('AdminController@index')}}"><i class="fa fa-github-alt"></i> <span>Quản lý sản phẩm</span></a></li>
-                <li><a href="{{action('AdminController@QLDH_index')}}"><i class="fa fa-linux"></i> <span>Quản lý đơn hàng</span></a></li>
+                <li><a href="/admin/product"><i class="fa fa-github-alt"></i> <span>Sản Phẩm</span></a></li>
+                <li><a href="/admin/bill"><i class="fa fa-shopping-cart"></i> <span>Đơn Hàng</span></a></li>
             </ul>
             <!-- /.sidebar-menu -->
         </section>
         <!-- /.sidebar -->
     </aside>
-`
+
     @yield('content')
 
 </div>
